@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-image: url("bg.png");
+    background-size: fill;
+    background-size: 100%; /* Adjust to fit three repeats horizontally */
+    background-repeat: repeat-x; /* Repeat only on the horizontal axis */
+    background-position: left;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+.baby-container {
+    background-color: #fff;
+    position: relative; /* Use relative or absolute if needed */
+    width: 45%; /* Width only covers content area */
+    min-height: 50vh; /* Full height of the viewport */
+    margin: 0 auto; /* Center the container horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add some padding if needed */
+}
+.logo {
+    height: 30vh;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.catalogue-link {
+    font-size: 18px;
+    color: #fff;
+    background-color: #d5393b;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.catalogue-link:hover {
+    background-color: #0056b3;
+}
