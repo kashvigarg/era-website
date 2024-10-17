@@ -19,26 +19,27 @@ body {
     align-items: center;
     align-content: center;
     background-image: url("bg.png");
-    background-size: fill;
-    background-size: 100%; /* Adjust to fit three repeats horizontally */
-    background-repeat: repeat-x; /* Repeat only on the horizontal axis */
+    background-size: 100%;
+    background-repeat: repeat-x;
     background-position: left;
     z-index: 1;
     height: 100%;
     width: 100%;
 }
+
 .baby-container {
     background-color: #fff;
-    position: relative; /* Use relative or absolute if needed */
-    width: 45%; /* Width only covers content area */
-    min-height: 50vh; /* Full height of the viewport */
-    margin: 0 auto; /* Center the container horizontally */
+    position: relative;
+    width: 45%;
+    min-height: 50vh;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center the content vertically */
-    align-items: center; /* Center content horizontally */
-    padding: 20px; /* Add some padding if needed */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
+
 .logo {
     height: 30vh;
     margin-bottom: 20px;
@@ -65,4 +66,64 @@ p {
 
 .catalogue-link:hover {
     background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For smaller tablets and mobile devices (768px and below) */
+@media (max-width: 768px) {
+    .container {
+        background-size: cover;
+    }
+
+    .baby-container {
+        width: 70%;
+        padding: 15px;
+    }
+
+    .logo {
+        height: 25vh;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .catalogue-link {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        background-size: cover;
+    }
+
+    .baby-container {
+        width: 85%;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 20vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .catalogue-link {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
 }
